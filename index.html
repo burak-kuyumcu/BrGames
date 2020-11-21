@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrGames</title>
+    <style>
+        *{
+  box-sizing : border-box;
+}
+body {
+  margin: 0;
+  background-image: url('img/gamebackground.jpg');
+}
+        header {
+ background-color:cornflowerblue; opacity: 0.7; 
+ padding: 20px;
+ text-align: center;
+ position: sticky;
+ position: -webkit-sticky; 
+}
+     ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ background-color: cornflowerblue; opacity: 0.8; 
+ position: -webkit-sticky; 
+ position: sticky;
+ top: 0;
+ overflow: hidden;
+}
+
+ul li {
+ float: left;
+}
+
+ul li a {
+ display: block;
+ color: white;
+ text-align: center;
+ padding: 14px 157px;
+ text-decoration: none;
+}
+
+li a:hover {
+ background-color:black;
+}
+ul li a.active {
+ background-color: darkblue;
+}
+ul li {
+ border-right: 1px solid black;
+ border-top: 1px solid black;
+ border-bottom: 1px solid black;
+ border-left: 1px solid black;
+}
+
+li:last-child {
+ border-right: none;
+ 
+}
+
+.column {
+  float: left;
+  padding: 10px;
+  
+}
+
+
+.column.side {
+  width: 20%;
+}
+
+
+.column.middle {
+  width: 60%;
+  background-color:skyblue; 
+  border: 10px solid blue; 
+  align-self: center;
+  text-align: center;
+  
+  
+  
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer {
+  background-color: cornflowerblue; 
+  padding: 10px;
+  text-align: center;
+  position: sticky;
+  
+}
+
+@media screen and (max-width: 600px) {
+ ul li.right, 
+ ul li {float: none;}
+ .column.side, .column.middle  {
+    width: 100%;
+}
+}
+@media screen and (max-width: 1400px) {
+ ul li.right, 
+ ul li {float: none;}
+ .column.side, .column.middle  {
+    width: 100%;
+}
+}
+   </style>
+</head>
+<body>
+   <header>
+       <img src="img/game.png" style="height:250px" style="width: 100%; ">
+       
+       
+           </header>
+          
+            
+            <ul>
+                <li><a class="active" href="index.html">Anasayfa</a></li>
+                <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                <li><a href="kurumsal.html">Kurumsal</a></li>
+                <li><a href="kariyer.html">Kariyer</a></li>
+                <li class="right"><a href="iletişim.html">İletişim</a></li>
+              </ul>
+            <br><br>
+            
+    
+            <div class="row">
+              <div class="column side">
+                <img style="width: 100%;height:100% ;" src="img/24eab460d2f094474e47fb01565c8e28.gif">
+              </div>
+                
+                
+            <div class="column middle">
+                <center> <div class="image"><img style="width: 70%;height: 70%;" src="img/klavye.jpg"></div> </center> 
+                  <h2>Tanıtım</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit voluptates odio eius odit, eaque natus distinctio, corporis porro aspernatur beatae unde necessitatibus sed facere a, tempore repellat officia commodi.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolorum soluta, quasi tempore ex molestias sapiente id a tempora perspiciatis doloribus architecto ullam voluptates blanditiis fugiat aliquam omnis facere rem? </p>
+                </div>
+                
+                <div class="column side" style="float: right;">
+                  <img style="width: 100%;height:100% ;" src="img/1633898117570f8ce3be62e8.10165368.gif">
+                </div>
+              </div>
+
+            <div class="footer">
+                <td>Copyright© </td><a href="https://www.facebook.com/"><div style="float: right;"><img src="img/facebook.png" width="20"</a>
+                <a href="https://www.instagram.com/"><img src="img/instagram.png"width="20"</a><a href="https://www.linkedin.com/"><img src="img/linkedin.png" width="20"</a>
+            <a href="https://twitter.com/"><img src="img/twitter.png"width="20"</a></div>
+            </div>
+</body>
+</html>

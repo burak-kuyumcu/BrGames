@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrGames</title>
+    <style>
+
+      div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+      *{
+box-sizing : border-box;
+}
+body {
+margin: 0;
+background-image: url('img/gamebackground.jpg');
+}
+      header {
+background-color:cornflowerblue; opacity: 0.7; 
+padding: 20px;
+text-align: center;
+position: sticky;
+position: -webkit-sticky; 
+}
+   ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: cornflowerblue; opacity: 0.8; 
+position: -webkit-sticky; 
+position: sticky;
+top: 0;
+overflow: hidden;
+}
+
+ul li {
+float: left;
+}
+
+ul li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 157px;
+text-decoration: none;
+}
+
+li a:hover {
+background-color:black;
+}
+ul li a.active {
+background-color: darkblue;
+}
+ul li {
+border-right: 1px solid black;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+border-left: 1px solid black;
+}
+
+li:last-child {
+border-right: none;
+
+}
+
+.column {
+float: left;
+padding: 10px;
+
+}
+
+
+.column.side {
+width: 20%;
+}
+
+
+.column.middle {
+width: 60%;
+background-color:skyblue; 
+border: 10px solid blue; 
+align-self: center;
+
+
+
+
+}
+
+
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+.footer {
+background-color: cornflowerblue; 
+padding: 10px;
+text-align: center;
+position: sticky;
+
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ul li.right, 
+ul li {float: none;}
+.column.side, .column.middle  {
+  width: 100%;
+}
+.responsive{
+  width: 100%;
+}
+}
+@media screen and (max-width: 1400px) {
+ ul li.right, 
+ ul li {float: none;}
+ .column.side, .column.middle  {
+    width: 100%;
+}
+.responsive{
+  width: 100%;
+}
+}
+ </style>
+</head>
+<body>
+ <header>
+     <img src="img/game.png" style="height:250px" style="width: 100%; ">
+     
+     
+         </header>
+        
+          
+          <ul>
+              <li><a  href="index.html">Anasayfa</a></li>
+              <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+              <li><a href="kurumsal.html">Kurumsal</a></li>
+              <li><a class="active" href="kariyer.html">Kariyer</a></li>
+              <li class="right"><a href="iletişim.html">İletişim</a></li>
+            </ul>
+          <br><br>
+          
+  
+          <div class="row">
+              <div class="column side">
+                <img style="width: 100%;height:100% ;" src="img/witcher.jpg">
+              </div>
+              
+              
+          <div class="column middle">
+                <h2>Kariyer Fırsatları</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, autem dolorem hic cupiditate enim beatae neque quod ex, omnis deserunt quisquam eius odit aspernatur? Minus dignissimos illum unde cupiditate commodi? </p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, at alias error nihil eos pariatur libero amet. Impedit, illo numquam soluta doloribus iusto vel velit fuga excepturi possimus. Vitae, consequatur?  </p>
+
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/ofis1.jpg">
+                      <img src="img/ofis1.jpg" width="600" height="400">
+                    </a>
+                    
+                </div>
+                  </div>
+                
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/ofis2.jpg">
+                      <img src="img/ofis2.jpg" width="600" height="400">
+                    </a>
+                    
+                  </div>
+                </div>
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/ofis3.jpg">
+                      <img src="img/ofis3.jpg" width="600" height="400">
+                    </a>
+                    
+                  </div>
+                </div>
+                
+                <div class="responsive">
+                  <div class="gallery">
+                    <a target="_blank" href="img/ofis4.jpeg">
+                      <img src="img/ofis4.jpg" width="600" height="400">
+                    </a>
+              
+                  </div>
+                </div>
+              </div>
+              
+              <div class="column side" style="float: right;">
+                <img style="width: 100%;height:100% ;" src="img/kratos.jpg">
+              </div>
+            </div>
+
+          <div class="footer">
+              <td>copyright© </td><div style="float: right;"><a href="https://www.facebook.com/"><img src="img/facebook.png" width="20"</a>
+              <a href="https://www.instagram.com/"><img src="img/instagram.png"width="20"</a><a href="https://www.linkedin.com/"><img src="img/linkedin.png" width="20"</a>
+          <a href="https://twitter.com/"><img src="img/twitter.png"width="20"</a></div>
+          </div>
+</body>
+</html>
